@@ -1,0 +1,16 @@
+name: Actions Workflow
+
+on: [push]
+
+jobs:
+  run-gitbub-actions:
+   runs-on: ubuntu-latest
+   steps:
+      - name: Simple javascript action
+        id: greet
+        uses: actions/hello-world-javascript-action@main
+        with:
+          who-to-greet: Codetraxx
+      - name: Greeting time
+        run: echo "${{ steps.greet.outputs.time }}"
+    
