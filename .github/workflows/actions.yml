@@ -10,11 +10,17 @@ jobs:
         run: |
           pwd
           ls
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: List files
+        run: |
+          pwd
+          ls
       - name: Simple javascript action
         id: greet
         uses: actions/hello-world-javascript-action@main
         with:
-          who-to-greet: Codetraxx
+          who-to-greet: Codetraxx 
       - name: Greeting time
         run: echo "${{ steps.greet.outputs.time }}"
-    
+     
