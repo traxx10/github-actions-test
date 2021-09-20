@@ -1,0 +1,23 @@
+name: Trinac
+age: 3
+address: "Awka: NG"
+active: true
+key: 
+  key: value
+  key2: 33
+  key3:
+    key: 1
+    key2: true
+array:
+  - item1
+  - item2
+  - key:
+      key: value
+      key2: 33
+longtext: > 
+  Esse occaecat veniam labore ut consectetur veniam proident est 
+  laborum labore proident sit. 
+  Anim in incididunt cupidatat consectetur irure nulla proident enim anim id cillum. 
+  Labore duis nulla dolor laborum elit elit ullamco cillum enim. 
+  Velit veniam eiusmod minim labore officia cillum minim culpa laboris sint id aliquip veniam. 
+  Magna cillum eiusmod mollit ipsum esse quis consequat velit. Occaecat reprehenderit aliqua deserunt tempor elit laboris.
