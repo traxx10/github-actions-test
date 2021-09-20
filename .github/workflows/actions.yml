@@ -6,6 +6,10 @@ jobs:
   run-gitbub-actions:
    runs-on: ubuntu-latest
    steps:
+      - name: List files
+        run: |
+          pwd
+          ls
       - name: Simple javascript action
         id: greet
         uses: actions/hello-world-javascript-action@main
