@@ -7,9 +7,12 @@ on:
       - assigned
       - opened
       - reopened
-  schedule:
-    - cron: "0/5 * * * *"
-    - cron: "0/6 * * * *"
+  repository_dispatch:
+    types:
+      - build
+  # schedule:
+  #   - cron: "0/5 * * * *"
+  #   - cron: "0/6 * * * *"
       
 jobs:
   run-gitbub-actions:
