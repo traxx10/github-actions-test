@@ -18,6 +18,8 @@ jobs:
   run-gitbub-actions:
    runs-on: ubuntu-latest
    steps:
+      - name: Repo Dispatch Payload
+        run: echo ${{ github.event.client_payload.env }}
       - name: List files
         run: |
           pwd
