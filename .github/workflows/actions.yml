@@ -1,6 +1,19 @@
 name: Actions Workflow
 
 on: 
+  push:
+    branches:
+      - master
+      - '/feature/*' # Matches feature/featA, feature/featB, doesnt match feature/feat/featA
+      - '/feature/**'  # Matches feature/feat/featA,
+    # branches-ignore:
+    #   - ""
+    tags:
+      - v1.*
+    paths:
+      - '**.js'
+    # paths-ignore:
+    #   - ""
   pull_request:
     types: 
       - closed
